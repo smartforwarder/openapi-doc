@@ -190,38 +190,38 @@ Content-Type: application/json
 
 ```json
 {
-      "success": true,
-      "data": [
+  "success":true,
+  "data":[
+    {
+      "ext_id":"5a4083de-51c5-4f5a-8a3d-fd2854a29d10",
+      "name":"交接单",
+      "files":[
         {
-          "ext_id": "5a4083de-51c5-4f5a-8a3d-fd2854a29d10",
-          "name": "交接单",
-          "files": [
-            {
-              "id": 18770,
-              "name": "交接单.pdf",
-              "alternativeText": null,
-              "caption": null,
-              "width": null,
-              "height": null,
-              "formats": null,
-              "hash": "HASLC_01240115829_DOE_24011042_288895e81a",
-              "ext": ".pdf",
-              "mime": "application/pdf",
-              "size": 383.27,
-              "url": "https://yahoo.com/assets/HASLC_01240115829_DOE_24011042_288895e81a.pdf",
-              "previewUrl": null,
-              "provider": "oss",
-              "provider_metadata": null,
-              "created_by": null,
-              "updated_by": null,
-              "created_at": "2024-02-25T21:31:26.000Z",
-              "updated_at": "2024-02-25T21:31:26.000Z"
-            }
-          ],
-          "private": false
+          "id":18770,
+          "name":"交接单.pdf",
+          "alternativeText":null,
+          "caption":null,
+          "width":null,
+          "height":null,
+          "formats":null,
+          "hash":"HASLC_01240115829_DOE_24011042_288895e81a",
+          "ext":".pdf",
+          "mime":"application/pdf",
+          "size":383.27,
+          "url":"https://yahoo.com/assets/HASLC_01240115829_DOE_24011042_288895e81a.pdf",
+          "previewUrl":null,
+          "provider":"oss",
+          "provider_metadata":null,
+          "created_by":null,
+          "updated_by":null,
+          "created_at":"2024-02-25T21:31:26.000Z",
+          "updated_at":"2024-02-25T21:31:26.000Z"
         }
-      ]
+      ],
+      "private":false
     }
+  ]
+}
 ```
 
 ## Documents API
