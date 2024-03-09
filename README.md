@@ -2,6 +2,40 @@
 
 Document for the SmartForwarder OpenAPI
 
+## Support parameters
+
+### Limit 
+
+Limit the size of the returned results.
+
+The default limit is 100
+
+***Examples***
+
+```
+GET /users?_limit=30
+```
+
+### Sort
+
+Sort according to a specific field.
+
+***Examples***
+
+```
+GET /users?_sort=email:ASC to sort by ascending order
+GET /users?_sort=email:DESC to sort by descending order
+```
+
+### Start
+
+Skip a specific number of entries (especially useful for pagination).
+
+***Examples***
+```
+GET /users?_start=10&_limit=10
+```
+
 ## Login and health check APIs
 
 ### Login API
