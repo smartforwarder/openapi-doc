@@ -2,7 +2,7 @@
 
 Document for the SmartForwarder OpenAPI
 
-## Support parameters
+## Supported common parameters
 
 ### Limit 
 
