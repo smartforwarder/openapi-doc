@@ -1,5 +1,65 @@
 # SmartForwarder OpenAPI Document 
 
+## 工作流程
+
+### CRM 发送订舱委托
+
+- CRM呼叫登录API，获取JWT token
+- CRM呼叫订舱委托单推送接⼝(createshipment API)
+- ⽤户在SF货代系统中进⾏确认
+- 确认后，SF呼叫CRM订舱回执推送接⼝来提供相关信息
+
+### CRM 更改订舱委托
+
+- CRM呼叫登录API，获取JWT token
+- CRM呼叫findShipments接⼝获取shipment id
+- CRM呼叫订舱委托单更新接⼝(updateshipment API)
+- ⽤户在SF货代系统中进⾏确认
+- 确认后，SF呼叫CRM订舱回执变更/删除接⼝来提供相关信息
+
+### 货代更改订舱委托
+
+- ⽤户在SF货代系统中进⾏修改
+- 确认后，SF呼叫CRM订舱回执变更/删除接⼝来提供相关信息
+
+### CRM 删除订舱委托
+
+- CRM呼叫登录API，获取JWT token
+- CRM呼叫findShipments接⼝获取shipment id
+- CRM呼叫订舱委托单删除接⼝(deleteshipment API)
+- ⽤户在SF货代系统中进⾏确认
+- 确认后，SF呼叫CRM订舱回执变更/删除接⼝来提供相关信息
+
+### CRM 发送报关单据
+
+- CRM呼叫登录API，获取JWT token
+- CRM呼叫findShipments接⼝获取shipment id
+- CRM呼叫报关单据推送接⼝(createshipment document API)
+- ⽤户在SF货代系统中进⾏确认
+- 确认后，SF调⽤报关单据变更接⼝通知CRM ？？？
+
+### CRM 修改报关单据
+
+- CRM呼叫登录API，获取JWT token
+- CRM呼叫findShipments接⼝获取shipment id
+- CRM呼叫报关单据修改接⼝(updatedocument API)
+- ⽤户在SF货代系统中进⾏确认
+- 确认后，SF调⽤报关单据变更接⼝通知CRM ？？？
+
+### CRM 删除报关单据
+
+- CRM呼叫登录API，获取JWT token
+- CRM呼叫findShipments接⼝获取shipment id
+- CRM呼叫报关单据删除接⼝(deletedocument API)
+- ⽤户在SF货代系统中进⾏确认
+- 确认后，SF调⽤报关单据变更接⼝通知CRM ？？？
+
+### CRM 查询物流状态跟踪
+
+- CRM呼叫登录API，获取JWT token
+- CRM呼叫findShipments接⼝获取所有shipments的物流状态
+
+
 ## Login and health check APIs
 
 Please check the login and health APIs in the root directory README.md.
