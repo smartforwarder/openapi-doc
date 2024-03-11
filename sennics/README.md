@@ -28,8 +28,41 @@ Content-Type: application/json
 **Content example**
 
 ```json
-{
-  "success": true
+{{
+  "success":true,
+  "total":45,
+  "data":[
+    {
+      "ext_id":"a06019af-959a-440a-ac0e-fd4f90c13f9a",
+      "created_at":"2024-01-25T19:25:47.000Z",
+      "updated_at":"2024-03-05T03:13:17.000Z",
+      "shipment_number":"DOE011040"
+    },
+    {
+      "ext_id":"e5686667-4784-4d55-be79-45401aa371c4",
+      "created_at":"2024-01-25T18:35:32.000Z",
+      "updated_at":"2024-03-04T19:27:24.000Z",
+      "shipment_number":"DOE011038"
+    },
+    {
+      "ext_id":"af052184-8e57-4e9e-a08a-1052caa3e140",
+      "created_at":"2024-01-25T18:53:14.000Z",
+      "updated_at":"2024-03-04T01:44:41.000Z",
+      "shipment_number":"DOE011039"
+    },
+    {
+      "ext_id":"bd837c1c-be72-4611-8acc-e59e14484a71",
+      "created_at":"2024-01-22T22:17:07.000Z",
+      "updated_at":"2024-03-03T19:54:00.000Z",
+      "shipment_number":"DOE011033"
+    },
+    {
+      "ext_id":"f5bb3ed4-e5ef-481c-b851-f389137494e0",
+      "created_at":"2023-12-28T02:55:00.000Z",
+      "updated_at":"2024-03-03T19:51:12.000Z",
+      "shipment_number":"DOE120022"
+    }
+  ]
 }
 ```
 ### Get A Shipment
@@ -55,7 +88,13 @@ Content-Type: application/json
 
 ```json
 {
-  "success": true
+  "success":true,
+  "data":{
+    "ext_id":"0d127e6f-f140-4a64-9222-f565c8fcb65d",
+    "created_at":"2024-01-29T01:07:41.000Z",
+    "updated_at":"2024-02-28T04:24:48.000Z",
+    "shipment_number":"DOE24011042"
+  }
 }
 ```
 
