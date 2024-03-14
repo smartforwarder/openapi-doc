@@ -15,9 +15,8 @@
 - CRM呼叫findShipments接⼝获取shipment id
 - CRM呼叫订舱委托单更新接⼝(updateshipment API)
 - ⽤户在SF货代系统中进⾏确认
-- 确认后，SF呼叫CRM订舱回执变更/删除接⼝来提供相关信息
 
-### 货代更改订舱委托
+### 货代更改订舱回执修改
 
 - ⽤户在SF货代系统中进⾏修改
 - 确认后，SF呼叫CRM订舱回执变更/删除接⼝来提供相关信息
@@ -28,7 +27,6 @@
 - CRM呼叫findShipments接⼝获取shipment id
 - CRM呼叫订舱委托单删除接⼝(deleteshipment API)
 - ⽤户在SF货代系统中进⾏确认
-- 确认后，SF呼叫CRM订舱回执变更/删除接⼝来提供相关信息
 
 ### CRM 发送报关单据
 
@@ -36,23 +34,22 @@
 - CRM呼叫findShipments接⼝获取shipment id
 - CRM呼叫报关单据推送接⼝(createshipment document API)
 - ⽤户在SF货代系统中进⾏确认
-- 确认后，SF调⽤报关单据变更接⼝通知CRM ？？？
 
 ### CRM 修改报关单据
 
 - CRM呼叫登录API，获取JWT token
 - CRM呼叫findShipments接⼝获取shipment id
-- CRM呼叫报关单据修改接⼝(updatedocument API)
+- CRM呼叫findShipmentDocument接⼝获取document id
+- CRM呼叫报关单据修改接⼝(update document API)
 - ⽤户在SF货代系统中进⾏确认
-- 确认后，SF调⽤报关单据变更接⼝通知CRM ？？？
 
 ### CRM 删除报关单据
 
 - CRM呼叫登录API，获取JWT token
 - CRM呼叫findShipments接⼝获取shipment id
-- CRM呼叫报关单据删除接⼝(deletedocument API)
+- CRM呼叫findShipmentDocument接⼝获取document id
+- CRM呼叫报关单据删除接⼝(delete document API)
 - ⽤户在SF货代系统中进⾏确认
-- 确认后，SF调⽤报关单据变更接⼝通知CRM ？？？
 
 ### CRM 查询物流状态跟踪
 
